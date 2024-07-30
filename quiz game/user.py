@@ -14,7 +14,7 @@ class User:
         cls.users[username] = password
         print("Registration successful!\n")
 
-    def _init_(self, username):
+    def __init__(self, username):
         self.username = username
         self.password = None
 

@@ -1,7 +1,7 @@
 from question import Question
 
 class Quiz:
-    def _init_(self):
+    def __init__(self):
         self.questions = []
         self.current_question_index = 0
         self.score = 0

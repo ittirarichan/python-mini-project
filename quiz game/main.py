@@ -18,7 +18,7 @@ def main():
                 User.register()
             elif user_action == "2":
                 username = input("Enter your username: ")
-                user = User()
+                user = User(username)
                 user.take_quiz(quiz)
                 break  
             else:
@@ -33,7 +33,7 @@ def main():
                 Admin.register()
             elif admin_action == "2":
                 username = input("Enter admin username: ")
-                admin = Admin()  
+                admin = Admin(username)  
                 admin.add_questions(quiz)
                 break  
             else:
@@ -42,4 +42,5 @@ def main():
         else:
             print("Invalid choice. Please enter 1 or 2.")
 
-main()
+if __name__ == "__main__":
+    main()

@@ -1,5 +1,4 @@
 import getpass
-from quiz import Quiz
 
 class Admin:
     admins = {} 
@@ -17,7 +16,7 @@ class Admin:
         cls.admins[username] = password
         print("Admin registration successful!\n")
 
-    def _init_(self, username):
+    def __init__(self, username):
         self.username = username
         self.password = None
 
